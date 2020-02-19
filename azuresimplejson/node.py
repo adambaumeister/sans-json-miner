@@ -78,7 +78,9 @@ class AzureSimpleJSON(SimpleJSON):
                     for addr_prefix in props["addressPrefixes"]:
                         d = {}
                         d["ip_prefix"] = addr_prefix
-
+                        d["region"] = props["region"]
+                        d["platform"] = props["platform"]
+                        d["systemService"] = props["systemService"]
                         dicts.append(d)
 
         return dicts
