@@ -1,18 +1,16 @@
 {
-    "version": "0.5",
-    "name": "youtube-miner",
+    "version": "0.1",
+    "name": "azure-simplejson-miner",
     "author": "Palo Alto Networks",
-    "author_email": "techbizdev@paloaltonetworks.com",
-    "description": "Sample MineMeld node extension for mining Youtube API",
-    "url": "https://github.com/PaloAltoNetworks/youtube-miner",
+    "author_email": "abaumeister@paloaltonetworks.com",
+    "description": "Refactor of Azure miner to support extractor in field (similar to AWS miners)",
+    "url": "https://github.com/adambaumeister/azure-miner",
     "entry_points": {
         "minemeld_nodes": {
-            "youtubeminer.Miner": "youtubeminer.node:Miner",
-            "youtubeminer.PlaylistMiner": "youtubeminer.node:PlaylistMiner",
-            "youtubeminer.ChannelMiner": "youtubeminer.node:ChannelMiner"
+            "azuresimplejson.AzureSimpleJSON": "azuresimplejson.node:AzureSimpleJSON"
         },
         "minemeld_prototypes": {
-            "youtubeminer.prototypes": "youtubeminer:prototypes"
+            "azuresimplejson.prototypes": "azuresimplejson:prototypes"
         }
     },
     "manifest_version": 0
