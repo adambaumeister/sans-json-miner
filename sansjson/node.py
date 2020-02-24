@@ -8,9 +8,9 @@ from minemeld.ft.basepoller import BasePollerFT
 
 LOG = logging.getLogger(__name__)
 
-class SansXML(BasePollerFT):
+class SansJSON(BasePollerFT):
     def configure(self):
-        super(SansXML, self).configure()
+        super(SansJSON, self).configure()
         pass
 
     def _process_item(self, item):

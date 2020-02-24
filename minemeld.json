@@ -1,16 +1,16 @@
 {
-    "version": "0.1",
-    "name": "sans-xml-miner",
+    "version": "1.1",
+    "name": "sans-json-miner",
     "author": "Palo Alto Networks",
     "author_email": "abaumeister@paloaltonetworks.com",
-    "description": "Refactor of Azure miner to support extractor in field (similar to AWS miners)",
-    "url": "https://github.com/adambaumeister/sans-xml-miner",
+    "description": "SANS JSON list mining.",
+    "url": "https://github.com/adambaumeister/sans-json-miner",
     "entry_points": {
         "minemeld_nodes": {
-            "sansxml.SansXML": "sansxml.node:SansXML"
+            "sansjson.SansJSON": "sansjson.node:SansJSON"
         },
         "minemeld_prototypes": {
-            "sansxml.prototypes": "sansxml:prototypes"
+            "sansjson.prototypes": "sansjson:prototypes"
         }
     },
     "manifest_version": 0

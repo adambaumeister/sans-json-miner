@@ -1,11 +1,11 @@
 url: https://github.com/adambaumeister/sans-xml-miner
 description: >
-  SANS XML based miner for shodan etc
+  SANS JSON based miner for shodan etc
 
 prototypes:
-  SansXML:
+  SansJSON:
     author: abaumeister
-    class: sansxml.SansXML
+    class: sansjson.SansJSON
     development_status: EXPERIMENTAL
     node_type: miner
     indicator_types:
