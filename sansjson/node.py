@@ -16,7 +16,7 @@ class SansJSON(BasePollerFT):
     def _process_item(self, item):
         # called on each item returned by _build_iterator
         # it should return a list of (indicator, value) pairs
-        indicator = item["IPv4"]
+        indicator = item["ipv4"]
         value = {
             'type': 'IPv4',
             'confidence': 100
