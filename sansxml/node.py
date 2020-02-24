@@ -4,11 +4,11 @@ import logging
 import requests
 from xml.etree.ElementTree import ElementTree
 
-from . import basepoller
+from minemeld.ft.basepoller import BasePollerFT
 
 LOG = logging.getLogger(__name__)
 
-class SansXML(basepoller.BasePollerFT):
+class SansXML(BasePollerFT):
     def configure(self):
         super(SansXML, self).configure()
         pass
