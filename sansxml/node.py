@@ -10,6 +10,7 @@ LOG = logging.getLogger(__name__)
 
 class SansXML(basepoller.BasePollerFT):
     def configure(self):
+        super(SansXML, self).configure()
         pass
 
     def _process_item(self, item):
