@@ -14,8 +14,6 @@ class SansJSON(BasePollerFT):
         pass
 
     def _process_item(self, item):
-        # called on each item returned by _build_iterator
-        # it should return a list of (indicator, value) pairs
         indicator = item["ipv4"]
         value = {
             'type': 'IPv4',
@@ -25,7 +23,7 @@ class SansJSON(BasePollerFT):
 
 
     def _build_iterator(self, now):
-        url = "https://isc.sans.edu/api/threatlist/shodan?json"
+        url = self.config.get('url', "https://isc.sans.edu/api/threatlist/shodan?json")
         r = requests.get(url)
 
         j = r.json()
